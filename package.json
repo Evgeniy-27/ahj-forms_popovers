@@ -1,20 +1,24 @@
 {
-  "name": "template",
+  "name": "05_ahj-forms_popovers",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Есть замечательный фреймворк Bootstrap, в котором реализовано достаточно много интересных виджетов с использованием jQuery. Но, как говорят современные и модные программисты, \"jQuery не нужен\", поэтому вам нужно реализовать такой же виджет на чистом JS.",
+  "main": "webpack.common.js",
   "scripts": {
-    "serve": "live-server src",
-    "start": "webpack-dev-server --mode development",
     "test": "jest",
     "lint": "eslint .",
-    "build": "webpack --mode production",
-    "test_2": "jest --testPathPattern=./src/",
-    "coverage": "jest --testPathPattern=./src/ --coverage",
-    "e2e": "jest --testPathPattern=./e2e/"
+    "build": "webpack --config webpack.prod.js",
+    "start": "webpack-dev-server --config webpack.dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Evgeniy-27/ahj-forms_popovers.git"
   },
   "author": "Evgen27",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Evgeniy-27/ahj-forms_popovers/issues"
+  },
+  "homepage": "https://github.com/Evgeniy-27/ahj-forms_popovers#readme",
   "devDependencies": {
     "@babel/cli": "^7.11.6",
     "@babel/core": "^7.11.6",
@@ -30,7 +34,6 @@
     "html-webpack-plugin": "^4.4.1",
     "jest": "^26.4.2",
     "mini-css-extract-plugin": "^0.11.1",
-    "puppeteer": "^7.0.4",
     "url-loader": "^4.1.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
